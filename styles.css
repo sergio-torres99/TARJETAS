@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif; /*Define el estilo de la letra en todo el documento*/
+    margin: 0; /*Elimina cualquier margen predeterminado que el navegador aplica por defecto*/
+}
+
+.contenedor {
+    display: flex; /*Activa el modelo de caja flexible para un contenedor, lo que permite un diseño más eficiente y flexible de sus elementos hijos*/
+    flex-wrap: wrap; /*Controla cómo se comportan los elementos dentro de un contenedor cuando no hay suficiente espacio en la línea principal para acomodarlos*/
+    justify-content: space-around; /*Sirve para alinear y distribuir el espacio entre los elementos hijos a lo largo del eje principal (horizontalmente en una fila o verticalmente en una columna)*/ 
+    padding: 20px; /*Crea el espacio alrededor del contenido de un elemento*/
+}
+
+.tarjeta {
+    width: 300px; /*Establece el ancho de un elemento*/
+    margin: 10px; /*Se utiliza para definir el espacio exterior alrededor de un elemento*/
+    border: 1px solid #ccc; /*se utiliza para definir un borde alrededor de un elemento, La propiedad shorthand border en CSS permite definir el grosor, el estilo y el color de un borde en una sola declaración*/
+    padding: 20px; /*Crea el espacio alrededor del contenido de un elemento*/
+    border-radius: 5px; /*Se utiliza para redondear las esquinas de un elemento*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Se utiliza para añadir sombras a los elementos, se esta usando un shorthand el cual corresponde respectivamente a (Desplazamiento Horizontal, Desplazamiento Vertical, Difuminado, Color)*/
+}
+
+.tarjeta img {
+    width: 100%; /*Establece el ancho de un elemento*/
+    height: auto; /*Se utiliza para establecer la altura de un elemento*/
+    display: block; /*Cambia el comportamiento del elemento, haciéndolo un elemento de bloque, ocupa todo el ancho disponible de su contenedor*/
+    border-radius: 5px 5px 0 0; /*Se utiliza para redondear las esquinas de un elemento, se esta usando un shorthand que aplica la propiedad en el siguiente orden (superior izquierda, superior derecha, inferior derecha, inferior izquierda (en sentido horario))*/
+}
+
+.tarjeta h3 {
+    margin-top: 10px; /*Se utiliza para definir el espacio exterior solo en la parte superior de un elemento*/
+}
+
+.tarjeta p {
+    font-size: 0.9em; /*Se utiliza para definir el tamaño de la fuente de un texto en un elemento*/
+    line-height: 1.5; /*se utiliza para definir la altura de la línea de texto en un elemento.*/
+}
